@@ -1,9 +1,10 @@
 [project]
 name = "fastapi-crud-jwt"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI CRUD project with JWT authentication"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
+
 dependencies = [
     "alembic>=1.18.4",
     "fastapi>=0.131.0",
@@ -15,6 +16,10 @@ dependencies = [
     "python-jose>=3.5.0",
     "sqlalchemy>=2.0.46",
     "sqlalchemy-orm>=1.2.10",
-    "uvicorn>=0.41.0",
+    "uvicorn[standard]>=0.41.0",
     "bcrypt==4.0.1",
 ]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
