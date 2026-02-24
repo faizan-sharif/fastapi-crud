@@ -13,4 +13,4 @@ class Settings(BaseSettings):
         env_file = BASE_DIR / ".env"
 
 settings = Settings()
-print("✅ Loaded DB URL:", settings.DATABASE_URL)  
+print(" Loaded DB URL:", settings.DATABASE_URL)  
